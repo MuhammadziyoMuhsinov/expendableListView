@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/fragmentStart">
+
+    <fragment
+        android:id="@+id/fragmentStart"
+        android:name="com.zora.bora.sora.futebol.FragmentStart"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_fragmentStart_to_info1"
+            app:destination="@id/info1" />
+        <action
+            android:id="@+id/action_fragmentStart_to_info2"
+            app:destination="@id/info2" />
+        <action
+            android:id="@+id/action_fragmentStart_to_info3"
+            app:destination="@id/info3" />
+        <action
+            android:id="@+id/action_fragmentStart_to_info4"
+            app:destination="@id/info4" />
+        <action
+            android:id="@+id/action_fragmentStart_to_info5"
+            app:destination="@id/info5" />
+    </fragment>
+    <fragment
+        android:id="@+id/info1"
+        android:name="com.zora.bora.sora.futebol.Info1"
+        android:label="fragment_info1"
+        tools:layout="@layout/fragment_info1" />
+    <fragment
+        android:id="@+id/info2"
+        android:name="com.zora.bora.sora.futebol.info2"
+        android:label="fragment_info2"
+        tools:layout="@layout/fragment_info2" />
+    <fragment
+        android:id="@+id/info3"
+        android:name="com.zora.bora.sora.futebol.info3"
+        android:label="fragment_info3"
+        tools:layout="@layout/fragment_info3" />
+    <fragment
+        android:id="@+id/info5"
+        android:name="com.zora.bora.sora.futebol.info5"
+        android:label="fragment_info5"
+        tools:layout="@layout/fragment_info5" />
+    <fragment
+        android:id="@+id/info4"
+        android:name="com.zora.bora.sora.futebol.info4"
+        android:label="fragment_info4"
+        tools:layout="@layout/fragment_info4" />
+</navigation>
